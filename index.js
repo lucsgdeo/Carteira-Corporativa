@@ -29,12 +29,3 @@ app.get("/infoPessoais", function(req,res){
 app.get("/historicoPonto", function(req,res){
 	res.sendFile(path.join(__dirname, "./public", "historicoPonto.html"))
 })
-
-// //Adicionando Parametros
-
-// app.get("ola/:cargo/:nome", function(req,res){
-//     res.send()
-// })
-	
-	
-
