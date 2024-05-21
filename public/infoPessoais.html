@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carteira Corporativa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+
+     
+    <div class="btn-group">
+        <a href="http://localhost:3000"><button type="button" class="btn btn-danger" >Informações pessoais</button></a>
+        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="http://localhost:3000/infoPessoais">Espelho de ponto</a>
+          <a class="dropdown-item" href="#">Outra ação</a>
+          <a class="dropdown-item" href="#">Alguma coisa aqui</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Link separado</a>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">Beneficios</button>
+        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Alguma ação</a>
+          <a class="dropdown-item" href="#">Outra ação</a>
+          <a class="dropdown-item" href="#">Alguma coisa aqui</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Link separado</a>
+        </div>
+      </div>
+
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">Noticias</button>
+        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Alguma ação</a>
+          <a class="dropdown-item" href="#">Outra ação</a>
+          <a class="dropdown-item" href="#">Alguma coisa aqui</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Link separado</a>
+        </div>
+      </div>
+</nav>
+</header>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponto</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> <!-- Adicionando o CSS do jQuery UI -->
+    <link rel="stylesheet" href="styles.css"> <!-- Arquivo CSS externo para estilização -->
+    <style>
+      body {
+        background-color: #fff; /* Definindo cor de fundo branca para a página */
+      }
+    
+      #periodoContainer {
+        width: 50%;
+        margin: auto;
+        padding: 20px;
+        background-color: #fff; /* Definindo cor de fundo branca para a div */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adicionando sombra */
+      }
+    
+      .input-group {
+        margin-bottom: 20px;
+      }
+    
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+    
+      input[type="date"] {
+        padding: 10px;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+    
+      button[type="submit"] {
+        padding: 10px 20px;
+        background-color: #e2334a;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    
+      button[type="submit"]:hover {
+        background-color: #a0a0a0;
+      }
+    </style>
+    </head>
+    <body>
+      <div id="periodoContainer">
+        <h2>Espelho de Ponto</h2>
+        <form id="periodoForm">
+          <div class="input-group">
+            <label for="inicio">Início do Período:</label>
+            <input type="date" id="inicio" name="inicio" /> <!-- Campo de entrada para o início do período -->
+          </div>
+          <div class="input-group">
+            <label for="termino">Término do Período:</label>
+            <input type="date" id="termino" name="termino"  /> <!-- Campo de entrada para o término do período -->
+          </div>
+          <button type="submit" formaction="http://localhost:3000/historicoPonto">Visualizar Espelho de Ponto</button>
+        </form>
+      </div>
+    
+    
+      </script>
+    </body>
+    </html>
+
+
+
+
+    
+  
