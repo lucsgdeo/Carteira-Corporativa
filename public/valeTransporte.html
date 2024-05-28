@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações do Vale-Transporte</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .info, .history, .places {
+            margin-top: 20px;
+        }
+        .info p, .history p, .places p {
+            margin: 5px 0;
+        }
+        .history {
+            margin-top: 40px;
+        }
+        .places {
+            margin-top: 40px;
+        }
+        .places-list {
+            list-style: none;
+            padding: 0;
+        }
+        .places-list li {
+            margin: 10px 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+</head>
+<body>
+    <div class="btn-group">
+        <a href="index.html"><button type="button" class="btn btn-danger" >Informações pessoais</button></a>
+        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="infoPessoais.html">Espelho de ponto</a>
+          <a class="dropdown-item" href="holerite.html">Holerite</a>
+          <a class="dropdown-item" href="absenteimos.html">Absenteimo</a>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">Beneficios</button>
+        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+           <a class="dropdown-item" href="valeAlimentacao.html">Vale-Alimentação</a>
+                    <a class="dropdown-item" href="valeTransporte.html">Vale-Transporte</a>
+          <a class="dropdown-item" href="beneficiosSecundarios.html">Beneficios Secundários</a>
+        </div>
+      </div>
+
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">Noticias</button>
+        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="noticias.html">Noticias da Empresa</a>
+          <a class="dropdown-item" href="vagasInternas.html">Vagas Internas</a>
+          <a class="dropdown-item" href="noticiasRH.html">Noticias do RH</a>
+        </div>
+      </div>
+</nav>
+</header>
+    
+    <div class="container">
+        <h1>Informações do Vale-Transporte</h1>
+        <div class="info">
+            <div class="form-group">
+                <label for="employee-id">ID do Funcionário:</label>
+                <input type="text" id="employee-id" name="employee-id" value="123456" readonly>
+            </div>
+            <div class="form-group">
+                <label for="employee-name">Nome do Funcionário:</label>
+                <input type="text" id="employee-name" name="employee-name" value="João da Silva" readonly>
+            </div>
+            <div class="form-group">
+                <label for="available-balance">Saldo Disponível (R$):</label>
+                <input type="text" id="available-balance" name="available-balance" value="150,00" readonly>
+            </div>
+            <div class="form-group">
+                <label for="last-recharge-date">Data da Última Recarga:</label>
+                <input type="text" id="last-recharge-date" name="last-recharge-date" value="20/05/2024" readonly>
+            </div>
+            <div class="form-group">
+                <label for="balance-validity">Validade do Saldo:</label>
+                <input type="text" id="balance-validity" name="balance-validity" value="20/06/2024" readonly>
+            </div>
+            <div class="form-group">
+                <label for="available-trips">Quantidade de Viagens Disponíveis:</label>
+                <input type="text" id="available-trips" name="available-trips" value="30" readonly>
+            </div>
+        </div>
+        <div class="history">
+            <h2>Histórico de Vale-Transporte</h2>
+            <p><strong>Abril 2024:</strong></p>
+            <p>Saldo Recarga: R$ 140,00</p>
+            <p>Data da Recarga: 20/04/2024</p>
+            <p>Viagens Utilizadas: 25</p>
+            <hr>
+            <p><strong>Março 2024:</strong></p>
+            <p>Saldo Recarga: R$ 130,00</p>
+            <p>Data da Recarga: 20/03/2024</p>
+            <p>Viagens Utilizadas: 28</p>
+            <hr>
+            <p><strong>Fevereiro 2024:</strong></p>
+            <p>Saldo Recarga: R$ 120,00</p>
+            <p>Data da Recarga: 20/02/2024</p>
+            <p>Viagens Utilizadas: 26</p>
+            <hr>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  
+</body>
+</html>

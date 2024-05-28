@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações sobre Férias</title>
+    <link rel="stylesheet" href="style.css"> <!-- Se tiver um arquivo CSS personalizado -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Links para estilos do Bootstrap -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .employee-info {
+            margin-top: 20px;
+        }
+        .employee-info p {
+            margin: 5px 0;
+        }
+        .vacation-history {
+            margin-top: 20px;
+        }
+        .vacation-history h2 {
+            margin-bottom: 10px;
+        }
+        .vacation-history ul {
+            list-style: none;
+            padding: 0;
+        }
+        .vacation-history li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="btn-group">
+        <a href="index.html"><button type="button" class="btn btn-danger" >Informações pessoais</button></a>
+        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="infoPessoais.html">Espelho de ponto</a>
+          <a class="dropdown-item" href="holerite.html">Holerite</a>
+          <a class="dropdown-item" href="absenteimos.html">Absenteimo</a>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">Beneficios</button>
+        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+           <a class="dropdown-item" href="valeAlimentacao.html">Vale-Alimentação</a>
+                    <a class="dropdown-item" href="valeTransporte.html">Vale-Transporte</a>
+          <a class="dropdown-item" href="beneficiosSecundarios.html">Beneficios Secundários</a>
+        </div>
+      </div>
+
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">Noticias</button>
+        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="noticias.html">Noticias da Empresa</a>
+          <a class="dropdown-item" href="vagasInternas.html">Vagas Internas</a>
+          <a class="dropdown-item" href="noticiasRH.html">Noticias do RH</a>
+        </div>
+      </div>
+</nav>
+</header>
+    <div class="container">
+        <h1>Informações sobre Férias</h1>
+
+        <div class="employee-info">
+            <p><strong>Nome:</strong> João da Silva</p>
+            <p><strong>Setor:</strong> Recursos Humanos</p>
+            <p><strong>Data de Início:</strong> 15/03/2015</p>
+            <p><strong>Últimas Férias:</strong> 01/07/2023 - 15/07/2023</p>
+            <p><strong>Próximas Férias Previstas:</strong> 01/07/2024 - 15/07/2024</p>
+            <p><strong>Valor Recebido nas Últimas Férias:</strong> R$ 3.500,00</p>
+            <p><strong>Data de Retorno das Últimas Férias:</strong> 16/07/2023</p>
+            <p><strong>Férias Atrasadas:</strong> Não há férias atrasadas</p>
+        </div>
+
+        <div class="vacation-history">
+            <h2>Histórico de Férias Anteriores</h2>
+            <ul>
+                <li><strong>Período:</strong> 01/07/2022 - 15/07/2022 | <strong>Valor Recebido:</strong> R$ 3.200,00 | <strong>Data de Retorno:</strong> 16/07/2022</li>
+                <li><strong>Período:</strong> 01/07/2021 - 15/07/2021 | <strong>Valor Recebido:</strong> R$ 3.000,00 | <strong>Data de Retorno:</strong> 16/07/2021</li>
+                <li><strong>Período:</strong> 01/07/2020 - 15/07/2020 | <strong>Valor Recebido:</strong> R$ 2.800,00 | <strong>Data de Retorno:</strong> 16/07/2020</li>
+                <!-- Adicione mais férias anteriores conforme necessário -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

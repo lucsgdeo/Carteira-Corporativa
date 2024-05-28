@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias - Vagas Internas</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .news-item {
+            margin-top: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+        .news-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .news-info {
+            color: #777;
+            margin-bottom: 10px;
+        }
+        .news-content {
+            color: #333;
+        }
+        .news-image {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn-group">
+        <a href="index.html"><button type="button" class="btn btn-danger" >Informações pessoais</button></a>
+        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="infoPessoais.html">Espelho de ponto</a>
+          <a class="dropdown-item" href="holerite.html">Holerite</a>
+          <a class="dropdown-item" href="absenteimos.html">Absenteimo</a>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">Beneficios</button>
+        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+           <a class="dropdown-item" href="valeAlimentacao.html">Vale-Alimentação</a>
+                    <a class="dropdown-item" href="valeTransporte.html">Vale-Transporte</a>
+          <a class="dropdown-item" href="beneficiosSecundarios.html">Beneficios Secundários</a>
+        </div>
+      </div>
+
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">Noticias</button>
+        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="noticias.html">Noticias da Empresa</a>
+          <a class="dropdown-item" href="vagasInternas.html">Vagas Internas</a>
+          <a class="dropdown-item" href="noticiasRH.html">Noticias do RH</a>
+        </div>
+      </div>
+</nav>
+</header>
+    
+    <div class="container">
+        <h1>Notícias - Vagas Internas</h1>
+
+        <div class="news-item">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://upacademy.com.br/wp-content/uploads/post3.jpg" alt="Imagem da Vaga" class="news-image">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="news-title">Abertura de Vaga: Desenvolvedor Web</h2>
+                    <p class="news-info">Publicado em 23 de Maio de 2024 | Departamento: Desenvolvimento</p>
+                    <p class="news-content">Estamos procurando um desenvolvedor web altamente motivado para se juntar à nossa equipe de desenvolvimento. O candidato ideal terá experiência em desenvolvimento front-end e back-end, familiaridade com frameworks populares como React e Node.js, e um forte desejo de aprender e crescer com a empresa.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://expertdigital.net/wp-content/uploads/2018/06/5-habilidades-que-n%C3%A3o-podem-faltar-para-um-analista-de-marketing.jpeg" alt="Imagem da Vaga" class="news-image">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="news-title">Vaga Disponível: Analista de Marketing Digital</h2>
+                    <p class="news-info">Publicado em 20 de Maio de 2024 | Departamento: Marketing</p>
+                    <p class="news-content">Estamos em busca de um analista de marketing digital para liderar nossas campanhas online. O candidato ideal terá experiência em SEO, SEM, marketing de conteúdo e análise de dados. Será responsável por aumentar a visibilidade da nossa marca e gerar leads qualificados.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Adicione mais notícias sobre vagas internas conforme necessário -->
+
+    </div>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
